@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "11c378e1-1f1f-4a4f-880f-55d85367ce69",
+		"name": "Covid API TZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14987201"
+	},
+	"item": [
+		{
+			"name": "Unauthorized. Invalid auth key or auth cookie is missing.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "multiple filters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&polyclinic_id=2&name=ivan&birthday=1971-07-27",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "polyclinic_id",
+							"value": "2"
+						},
+						{
+							"key": "name",
+							"value": "ivan"
+						},
+						{
+							"key": "birthday",
+							"value": "1971-07-27"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "phone filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&phone=89995675156",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "phone",
+							"value": "89995675156"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "name filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&name=ivan",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "name",
+							"value": "ivan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "polyclinic filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&polyclinic_id=2",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "polyclinic_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "treatment filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&treatment_id=2",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "treatment_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "form_disease filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&form_disease_id=1",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "form_disease_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status_id filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&status_id=3",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "status_id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/patient-list?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&page=2",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"patient-list"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "'f68ac15505f94840c48cd355e1324b30c79f0fa2a3ef72888c579aa0e1db673ea:2:{i:0;s:11:\\\"auth_cookie\\\";i:1;s:32:\\\"BmbKzaq5MAbn7tB9s06gUbd4alzoJ3gz\\\";}'",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "auth_cookie",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "ivan3",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "1971-07-27",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "89995675156",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Маяковского, 122-222",
+							"type": "text"
+						},
+						{
+							"key": "polyclinic_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "treatment_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "status_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "form_disease_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "created",
+							"value": "null",
+							"type": "text"
+						},
+						{
+							"key": "created_by",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "updated",
+							"value": "2020-05-28 18:43:16",
+							"type": "text"
+						},
+						{
+							"key": "updated_by",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "diagnosis_date",
+							"value": "null",
+							"type": "text"
+						},
+						{
+							"key": "recovery_date",
+							"value": "2023-04-11",
+							"type": "text"
+						},
+						{
+							"key": "analysis_date",
+							"value": "2023-04-12 16:19:25",
+							"type": "text"
+						},
+						{
+							"key": "source_id",
+							"value": "null",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://covid/web/api/create-patient?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&name=ivan2&phone=1&birthday=1971-07-27&address=Маяковского,%20122-222&polyclinic_id=2&treatment_id=2&status_id=3&form_disease_id=1&created=NULL&created_by=1&updated=2020-05-28%2018:43:16&updated_by=1&diagnosis_date=NULL&recovery_date=2023-04-11&analysis_date=2023-04-12%2016:19:25&source_id=NULL",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"create-patient"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "name",
+							"value": "ivan2"
+						},
+						{
+							"key": "phone",
+							"value": "1"
+						},
+						{
+							"key": "birthday",
+							"value": "1971-07-27"
+						},
+						{
+							"key": "address",
+							"value": "Маяковского,%20122-222"
+						},
+						{
+							"key": "polyclinic_id",
+							"value": "2"
+						},
+						{
+							"key": "treatment_id",
+							"value": "2"
+						},
+						{
+							"key": "status_id",
+							"value": "3"
+						},
+						{
+							"key": "form_disease_id",
+							"value": "1"
+						},
+						{
+							"key": "created",
+							"value": "NULL"
+						},
+						{
+							"key": "created_by",
+							"value": "1"
+						},
+						{
+							"key": "updated",
+							"value": "2020-05-28%2018:43:16"
+						},
+						{
+							"key": "updated_by",
+							"value": "1"
+						},
+						{
+							"key": "diagnosis_date",
+							"value": "NULL"
+						},
+						{
+							"key": "recovery_date",
+							"value": "2023-04-11"
+						},
+						{
+							"key": "analysis_date",
+							"value": "2023-04-12%2016:19:25"
+						},
+						{
+							"key": "source_id",
+							"value": "NULL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "missing name create new user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/create-patient?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&birthday=1971-07-27&phone=89995675156&address=Маяковского,%20122-222&polyclinic_id=2&treatment_id=2&status_id=3&form_disease_id=1&created=NULL&created_by=1&updated=2020-05-28%2018:43:16&updated_by=1&diagnosis_date=NULL&recovery_date=2023-04-11&analysis_date=2023-04-12%2016:19:25&source_id=NULL",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"create-patient"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "birthday",
+							"value": "1971-07-27"
+						},
+						{
+							"key": "phone",
+							"value": "89995675156"
+						},
+						{
+							"key": "address",
+							"value": "Маяковского,%20122-222"
+						},
+						{
+							"key": "polyclinic_id",
+							"value": "2"
+						},
+						{
+							"key": "treatment_id",
+							"value": "2"
+						},
+						{
+							"key": "status_id",
+							"value": "3"
+						},
+						{
+							"key": "form_disease_id",
+							"value": "1"
+						},
+						{
+							"key": "created",
+							"value": "NULL"
+						},
+						{
+							"key": "created_by",
+							"value": "1"
+						},
+						{
+							"key": "updated",
+							"value": "2020-05-28%2018:43:16"
+						},
+						{
+							"key": "updated_by",
+							"value": "1"
+						},
+						{
+							"key": "diagnosis_date",
+							"value": "NULL"
+						},
+						{
+							"key": "recovery_date",
+							"value": "2023-04-11"
+						},
+						{
+							"key": "analysis_date",
+							"value": "2023-04-12%2016:19:25"
+						},
+						{
+							"key": "source_id",
+							"value": "NULL"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "missing phone create new user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://covid/web/api/create-patient?authKey=ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL&name=пациент&birthday=1971-07-27&address=Маяковского,%20122-222&polyclinic_id=2&treatment_id=2&status_id=3&form_disease_id=1&created=NULL&created_by=1&updated=2020-05-28%2018:43:16&updated_by=1&diagnosis_date=NULL&recovery_date=2023-04-11&analysis_date=2023-04-12%2016:19:25&source_id=NULL",
+					"protocol": "http",
+					"host": [
+						"covid"
+					],
+					"path": [
+						"web",
+						"api",
+						"create-patient"
+					],
+					"query": [
+						{
+							"key": "authKey",
+							"value": "ogvm05q-yOqZJSHJ_rAzJLcYPstyrDnL"
+						},
+						{
+							"key": "name",
+							"value": "пациент"
+						},
+						{
+							"key": "birthday",
+							"value": "1971-07-27"
+						},
+						{
+							"key": "address",
+							"value": "Маяковского,%20122-222"
+						},
+						{
+							"key": "polyclinic_id",
+							"value": "2"
+						},
+						{
+							"key": "treatment_id",
+							"value": "2"
+						},
+						{
+							"key": "status_id",
+							"value": "3"
+						},
+						{
+							"key": "form_disease_id",
+							"value": "1"
+						},
+						{
+							"key": "created",
+							"value": "NULL"
+						},
+						{
+							"key": "created_by",
+							"value": "1"
+						},
+						{
+							"key": "updated",
+							"value": "2020-05-28%2018:43:16"
+						},
+						{
+							"key": "updated_by",
+							"value": "1"
+						},
+						{
+							"key": "diagnosis_date",
+							"value": "NULL"
+						},
+						{
+							"key": "recovery_date",
+							"value": "2023-04-11"
+						},
+						{
+							"key": "analysis_date",
+							"value": "2023-04-12%2016:19:25"
+						},
+						{
+							"key": "source_id",
+							"value": "NULL"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
